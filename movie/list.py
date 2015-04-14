@@ -1,7 +1,8 @@
 import os
 
-dirs = ["c:\\movie\\被嫌弃的松子的一生",
-    "c:\\movie"]
+dirs = ["\\\\192.168.1.111\\movie\\Collections",
+    #"c:\\movie"
+    ]
 
 def ld(d):
     files = os.listdir(d)
@@ -11,13 +12,12 @@ def ld(d):
     return ret
     
 if '__main__' == __name__:
-    '''
     for d in dirs:
         print()
         for f in ld(d):
             print(f)
-            '''
-    rep = [
+    
+    '''rep = [
         ['b被嫌弃的松子的一生.chn.srt', '被嫌弃的松子的一生.chn.srt'],
         ['b被嫌弃的松子的一生.chn1.srt', '被嫌弃的松子的一生.chn1.srt'],
         ['b被嫌弃的松子的一生.chn2.srt', '被嫌弃的松子的一生.chn2.srt'],
@@ -26,3 +26,4 @@ if '__main__' == __name__:
     dir = 'c:\movie\被嫌弃的松子的一生'
     for x in rep:
         os.rename(os.path.join(dir, x[0]), os.path.join(dir, x[1]))
+        '''
